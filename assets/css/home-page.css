@@ -1,0 +1,36 @@
+@import url('/assets/css/reset.css');
+@import url('/assets/css/global.css');
+
+body {
+    background-color: var(--primary-color);
+}
+
+body::before {
+    content: "";
+    background-image: url('/assets/images/spider-man-background.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    opacity: .2;    
+}
+
+.menu {
+    padding: 1rem 0;
+    width: 100%;
+    text-align: center;
+    position: relative; /* para ficar a frente do background */
+}
+
+.menu__item {
+    display: inline-block;
+    text-transform: uppercase; /* letras maiusculas */
+    margin: 0 1.25rem;
+}
+
+.menu__icon {
+    display: inline-block;
+    width: 2.5rem;
+}
