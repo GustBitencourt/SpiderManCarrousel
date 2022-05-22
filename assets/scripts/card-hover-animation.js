@@ -3,7 +3,7 @@ function handleMouseEnter() {
     this.classList.add('card--hovered');
 
     /* Trocar background do card */
-    document.body.id = `${this.id}--hovered`;
+    document.body.id = `${this.id}-hovered`;
 }
 
 /* Remove classe responsavel pela animacao quando o mouse sai da imagem */
