@@ -55,6 +55,7 @@ body::before {
     object-fit: cover; /* imagem ocupar todo espaço disponivel */
     position: absolute;
     opacity: 1;
+    transition: opacity 1s ease-in-out;
 }
 
 .card__image {
@@ -62,6 +63,7 @@ body::before {
     height: 100%;
     object-fit: contain; /* se encaaixar na div sem cortar o elemento */
     position: relative;
+    transition: 1s ease-in-out;
 }
 
 .card__title {
@@ -114,14 +116,14 @@ body::before {
     position: absolute;
 }
 
-/* animação */
-.card--hovered,
-.card__background {
+/* Hover - animação */
+
+.card--hovered .card__background {
     cursor: pointer;
     opacity: 0;
 }
 
-.card--hovered,
-.card__image {
+.card--hovered .card__image {
     transform: scale(1.1);
 }
+
