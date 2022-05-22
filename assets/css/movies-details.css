@@ -3,6 +3,7 @@
 @import url('components/_navigator.css');
 @import url('components/_pills.css');
 @import url('components/_link-button.css');
+@import url('components/_gallery.css');
 
 .wrapper {
     display: flex;
@@ -48,6 +49,7 @@
     margin-top: 3.125rem;
     margin-left: 0;
     margin-bottom: 1.875rem;
+    height: 4rem;
 }
 
 .wrapper .main-content__top .description {
