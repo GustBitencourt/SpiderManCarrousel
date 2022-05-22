@@ -48,6 +48,7 @@ body::before {
   width: calc(100% / 3 - 8%); /* calculo para posicionamneto dos cards */
   height: 70vh;
   position: relative;
+  transition: filter .5s ease-in-out;
 }
 
 .card__background {
@@ -127,6 +128,7 @@ body::before {
 .card--hovered .card__image {
   transform: scale(1.4);
   filter: drop-shadow(1.875rem 0.625rem 0.25rem rgba(0, 0, 0, 0.5));
+  z-index: 2;
 }
 
 /* Trocando fundo do card*/
@@ -145,4 +147,9 @@ body#spider-man-03-hovered::before {
 
 body[id^="spider-man-"]::before {
   opacity: 1;
+}
+
+/* Pegando elementos que não estão selecionados */
+body[id^="spider-man-"] .card:not(.card--hovered) {
+    filter: grayscale(100%);
 }
