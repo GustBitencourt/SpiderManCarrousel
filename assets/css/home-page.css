@@ -50,6 +50,7 @@ body::before {
   justify-content: center;
   width: calc(100vw / 3 - 10%); /* calculo para posicionamneto dos cards */
   transform-style: preserve-3d; /* lida com a perspectiva no container pra adicionar o efeito 3D */
+  transition: transform .8s ease-in-out; /* efeito de rotação */
 }
 
 .card {

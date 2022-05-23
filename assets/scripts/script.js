@@ -44,4 +44,9 @@ function selectCarouselElement(selectedButtonElement) {
     const newTransform = transform.replace(rotateY[0], `rotateY(${rotateYDeg}deg)`); //substitui o valor do array de rotateY pelo novo valor
 
     carousel.style.transform = newTransform; //atribuindo o novo valor ao transform do carousel
+
+    /* trocando botão de card ativo */
+    const activeButtonElement = document.querySelector('.controller__button--active');
+    activeButtonElement.classList.remove('controller__button--active');
+    selectedButtonElement.classList.add('controller__button--active');
 }
