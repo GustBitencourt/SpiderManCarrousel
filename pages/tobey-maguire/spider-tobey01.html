@@ -7,13 +7,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- CSS -->
     <link rel="stylesheet" href="../../assets/css/movies-details.css">
+    <!-- Fancybox -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css"
+    />
     <title>Tobey Maguire | SpiderMan I</title>
 </head>
 
 <body>
     <main class="wrapper">
-        <aside class="left-column">
+        <video autoplay loop muted>
+            <source src="../../assets/videos/spiderman-2002-trailer.mp4" type="video/mp4">
+        </video>
 
+        <aside class="left-column">
             <nav class="navigator">
                 <div class="navigator__icon">
                     <a href="../../index.html">
@@ -22,8 +30,8 @@
                 </div>
 
                 <ul>
-                    <li><a href="#01">01</a></li>
-                    <li><a href="#02">02</a></li>
+                    <li><a href="spider-tobey01.html">01</a></li>
+                    <li><a href="spider-tobey02.html">02</a></li>
                     <li><a href="#03">03</a></li>
                 </ul>
             </nav>
@@ -78,19 +86,19 @@
                 <div class="gallery">
                     <ul>
                         <li>
-                            <a href="#">
+                            <a data-fancybox href="../../assets/images/spiderman-tobey/movie-01/gallery/image-01-full.jpg">
                                 <img src="../../assets/images/spiderman-tobey/movie-01/gallery/image-01.png"
                                     alt="Homem aranha de cabeça para baixo beijando Mary Jane">
                             </a>
                         </li>
                         <li>
-                            <a href="#">
+                            <a data-fancybox href="../../assets/images/spiderman-tobey/movie-01/gallery/image-02-full.jpg">
                                 <img src="../../assets/images/spiderman-tobey/movie-01/gallery/image-02.png"
                                     alt="Peter Parker encarando uniforme">
                             </a>
                         </li>
                         <li>
-                            <a href="#">
+                            <a data-fancybox href="../../assets/images/spiderman-tobey/movie-01/gallery/image-03-full.jpg">
                                 <img src="../../assets/images/spiderman-tobey/movie-01/gallery/image-03.png"
                                     alt="Duende Verde encarando o Homem Aranha enquanto o segura pelo pescoço">
                             </a>
@@ -103,7 +111,8 @@
         </section>
 
     </main>
-
+    
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>    
 </body>
 
 </html>
